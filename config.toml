@@ -1,3 +1,65 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://ovolh.com/"
+DefaultContentLanguage = "zh" # Theme's display language, supports: en, fr, zh, zh-hant
+languageCode = "zh"
+title = "非零的小破站"
+copyright = "OvOLH. 本站遵循 CC-BY-NC 4.0 协议。"
+theme = "diary"
+googleAnalytics = "UA-151878489-1"
+googleSiteVerification = "buukz64EBBWbEI2bATVc7Cl0KmgivCiR3TM0JWvUsY"
+enableRobotsTXT = true
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokailight"
+    tabWidth = 4
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+[params]
+subtitle = "记录生活 分享生活"
+favicon = "/images/favicon.ico"
+enableAutoDarkMode=true
+walineServer = "https://hugo-waline-p6vn8e8c4-ovolh.vercel.app/"
+# Twitter Card and Open Graph settings
+enableOpenGraph = true
+enableTwitterCards = true
+enableReadingTime=true
+# enableLaTeX=false
+title = "OvOLH - 非零的小破站" # will set 'og:site_name'
+description = "ovolh,OvOLH,ibyond,blog,分享生活,编程,DoIt,hugo博客,程序员,个人博客,程序員,redis,mysql,php,laravel,golang,hugo,技术博客"  # will set 'og:description'
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[[menu.main]]
+url = "/posts"
+name = "文章"
+weight = 1
+[[menu.main]]
+url = "/categories"
+name = "分类"
+weight = 2
+[[menu.main]]
+url = "/tags"
+name = "标签"
+weight = 3
+[[menu.main]]
+url = "/friends"
+name = "友链"
+weight = 4
+[[menu.main]]
+url = "/about"
+name = "关于"
+weight = 5
+[[menu.main]]
+url = "/index.xml"
+name = "RSS"
+weight = 6
